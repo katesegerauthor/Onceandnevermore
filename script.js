@@ -1,6 +1,21 @@
 /* Once and Nevermore — A Camelot Anthology
    Author carousel + tiny helpers.
 */
+// Background: fade in once Flowerfield is loaded
+(() => {
+  const bgLayer = document.querySelector(".bg");
+  if (!bgLayer) return;
+
+  const img = new Image();
+  img.src = "images/Flowerfield.jpg";
+
+  const go = () => bgLayer.classList.add("bg-ready");
+  if (img.complete) go();
+  else {
+    img.onload = go;
+    img.onerror = go; // still run fade (at least we see the gradient)
+  }
+})();
 
 const AUTHORS = [
   {
