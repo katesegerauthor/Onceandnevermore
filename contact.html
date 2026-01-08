@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Once and Nevermore — A Camelot Anthology." />
+  <title>Contact — Once and Nevermore</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GoatCounter (optional): uncomment + replace YOURCODE
+  <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  -->
+</head>
+
+<body>
+  <div class="watermark" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <a class="brand-link" href="index.html" aria-label="Once and Nevermore home">
+        <span class="brand-title">Once and Nevermore</span>
+        <span class="brand-sub">A Camelot Anthology</span>
+      </a>
+    </div>
+
+    <nav class="nav">
+      <a class="nav-link" href="index.html#authors">Authors</a>
+      <a class="nav-link" href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="contact">
+      <h1>Contact</h1>
+      <p class="lede">
+        For press, anthology questions, rights, or general correspondence, send your message below.
+        (If you prefer, replace the form handler with your own endpoint or a static-form service.)
+      </p>
+
+      <form class="contact-form" method="post" action="#" onsubmit="return window.ONCE_NEVERMORE_sendRaven(event);">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="7" required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button class="button" type="submit">Send</button>
+          <a class="button ghost" href="index.html">Return to the hall</a>
+        </div>
+
+        <p class="smallprint">
+          This starter uses a <span class="mono">mailto:</span> fallback (opens the visitor’s email client).
+          To collect messages automatically, set <span class="mono">action</span> to your form endpoint.
+        </p>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>
+        © <span id="year"></span> Once and Nevermore.
+      </p>
+      <p class="footer-links">
+        <a href="index.html">Home</a>
+      </p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

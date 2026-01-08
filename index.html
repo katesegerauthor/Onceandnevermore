@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Once and Nevermore — A Camelot Anthology. Meet the authors, explore their chosen pages, and step into new Arthurian tales." />
+  <title>Once and Nevermore — A Camelot Anthology</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GoatCounter (optional): uncomment + replace 
+  <script data-goatcounter="https://FOO.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  -->
+</head>
+
+<body>
+  <div class="watermark" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <a class="brand-link" href="index.html" aria-label="Once and Nevermore home">
+        <span class="brand-title">Once and Nevermore</span>
+        <span class="brand-sub">A Camelot Anthology</span>
+      </a>
+    </div>
+
+    <nav class="nav">
+      <a class="nav-link" href="#authors">Authors</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Once and Nevermore</h1>
+        <p class="tagline">New legends in old ink. A Camelot anthology written in madness and starlight.</p>
+
+        <div class="cta-row">
+          <a class="button" href="#authors">Meet the authors</a>
+          <a class="button ghost" href="contact.html">Send a raven</a>
+        </div>
+
+        <p class="smallprint">
+          Swap in real cover art and author portraits in <span class="mono">/images</span>.
+          Everything else stays delightfully flat: <span class="mono">index.html</span>, <span class="mono">style.css</span>, <span class="mono">script.js</span>, <span class="mono">contact.html</span>.
+        </p>
+      </div>
+
+      <figure class="cover">
+        <img src="images/cover.jpg" alt="Cover of Once and Nevermore — A Camelot Anthology" loading="lazy" />
+        <figcaption class="cover-caption">Anthology cover</figcaption>
+      </figure>
+    </section>
+
+    <section id="authors" class="authors">
+      <h2>Authors</h2>
+      <p class="lede">
+        The carousel turns on its own, slowly, like a page being turned by a draft in the Great Hall.
+        Hover to pause. Click an author to bring them into focus, then click again to open their chosen page.
+      </p>
+
+      <div class="carousel-shell" id="authorCarousel" aria-label="Author carousel" tabindex="0">
+        <button class="carousel-btn prev" type="button" aria-label="Previous author">‹</button>
+        <ul class="carousel-track" role="list"></ul>
+        <button class="carousel-btn next" type="button" aria-label="Next author">›</button>
+      </div>
+
+      <noscript>
+        <div class="noscript">
+          <p><strong>JavaScript is off.</strong> Here is a simple list instead:</p>
+          <ul>
+            <li>Update the author list in <span class="mono">script.js</span>.</li>
+          </ul>
+        </div>
+      </noscript>
+    </section>
+
+    <footer class="footer">
+      <p>
+        © <span id="year"></span> Once and Nevermore. All stories belong to their authors or whatever copyright arrangement we decide. We're still figuring it out. This site isn't even public, and you expect us to have copyright notices?! Go get eaten by a dragon!.
+      </p>
+      <p class="footer-links">
+        <a href="contact.html">Contact</a>
+        <span aria-hidden="true">·</span>
+        <a href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Back to top</a>
+      </p>
+      <p class="footer-credit">
+  Anthology curated by
+  <a href="https://kateseger.com" target="_blank" rel="noopener" aria-label="Kate Seger">
+    Kate Seger
+  </a>.
+</p>
+            <p class="footer-credit">
+  Site coded by
+  <a href="https://www.whoisluciusmontegrot.com" target="_blank" rel="noopener" aria-label="Lucius Montegrot">
+    Lucius Montegrot
+  </a>.
+</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
